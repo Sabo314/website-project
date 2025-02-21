@@ -1,0 +1,328 @@
+/* Основні налаштування для шрифтів */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Секція Hero */
+.hero {
+    background: url('images/building-header.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero h1, .hero p {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.6;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+/* Кнопка "Досліджуйте наші проекти" */
+.btn-explore {
+    background-color: #f39c12;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid #f39c12;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.btn-explore:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-color: #e67e22;
+}
+
+/* Секції "Про нас", "Послуги", "Контакт" */
+.about, .services, .contact {
+    text-align: center;
+}
+
+/* Блок "Наші послуги" */
+.services {
+    background-color: #f8f9fa;
+    padding-top: 60px;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #343a40;
+}
+
+.services .col-md-4 {
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services .col-md-4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.services img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.services img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.services h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.services p {
+    color: #6c757d;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Стилі для секції "Зв'яжіться з нами" */
+.contact {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.contact .lead {
+    font-size: 1.25rem;
+    color: #6c757d;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact .form-group label {
+    font-size: 1.1rem;
+    color: #343a40;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.contact .form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #495057;
+    transition: border 0.3s ease;
+}
+
+.contact .form-control:focus {
+    border-color: #f39c12;
+    outline: none;
+}
+
+.contact .form-control::placeholder {
+    color: #6c757d;
+}
+
+.contact .btn-submit {
+    background-color: #f39c12;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact .btn-submit:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .contact h2 {
+        font-size: 2.5rem;
+    }
+
+    .contact .lead {
+        font-size: 1.1rem;
+    }
+
+    .contact form {
+        padding: 20px;
+    }
+
+    .contact .form-control {
+        padding: 10px;
+    }
+
+    .contact .btn-submit {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}
+
+/* Футер */
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Секція "Про нас" */
+.about {
+    background-color: #f8f9fa;
+}
+
+.about h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 40px;
+}
+
+.about p.lead {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 40px;
+    line-height: 1.7;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about .row {
+    margin-top: 40px;
+}
+
+.about .col-md-4 {
+    margin-bottom: 30px;
+}
+
+.about .service-card {
+    transition: all 0.3s ease;
+}
+
+.about .service-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.about h4 {
+    font-size: 1.5rem;
+    color: #343a40;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about p.text-muted {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.about ul.list-unstyled {
+    font-size: 1.1rem;
+    color: #495057;
+    margin-top: 40px;
+}
+
+.about ul.list-unstyled li {
+    margin-bottom: 15px;
+}
+
+.about ul.list-unstyled li i {
+    color: #28a745;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .about h2 {
+        font-size: 2.5rem;
+    }
+
+    .about .service-card {
+        margin-bottom: 20px;
+    }
+
+    .services .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .services img {
+        height: 200px;
+    }
+}

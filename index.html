@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Будівельна компанія</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 🔹 Навігація -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Будівництво+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Про нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Послуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 🔹 Головний блок -->
+    <header id="hero" class="hero">
+        <div class="container text-white text-center">
+            <h1 class="display-3 font-weight-bold mb-3">Будівельна компанія</h1>
+            <p class="lead mb-4">Надійне та сучасне будівництво для вашого комфорту</p>
+            <a href="#projects" class="btn btn-explore btn-lg">Досліджуйте наші проекти</a>
+        </div>
+    </header>
+
+    <!-- 🔹 Про компанію -->
+    <section id="about" class="about py-5">
+        <div class="container text-center">
+            <h2 class="display-4 text-dark mb-4">Про нас</h2>
+            <p class="lead text-muted mb-5">
+                Будівельна компанія "Будівництво+" — це команда досвідчених професіоналів, які спеціалізуються на проектуванні, будівництві та ремонті будівель. Ми працюємо з клієнтами по всій країні, пропонуючи індивідуальний підхід і високу якість робіт, виконаних у строк.
+            </p>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-card p-4 bg-light shadow-sm rounded">
+                        <i class="fas fa-building fa-4x mb-4" style="color: #f39c12;"></i>
+                        <h4 class="h5 text-dark mb-3">Проектування</h4>
+                        <p class="text-muted">Ми розробляємо унікальні проекти, враховуючи всі побажання наших клієнтів та технічні вимоги. Наші проекти створені для довговічності та естетики.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card p-4 bg-light shadow-sm rounded">
+                        <i class="fas fa-hard-hat fa-4x mb-4" style="color: #f39c12;"></i>
+                        <h4 class="h5 text-dark mb-3">Будівництво</h4>
+                        <p class="text-muted">Ми використовуємо сучасні будівельні матеріали та інноваційні технології для того, щоб ваші об'єкти стали надійними та комфортними для життя або роботи.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card p-4 bg-light shadow-sm rounded">
+                        <i class="fas fa-wrench fa-4x mb-4" style="color: #f39c12;"></i>
+                        <h4 class="h5 text-dark mb-3">Ремонт</h4>
+                        <p class="text-muted">Професійний ремонт будь-якої складності — від косметичних змін до капітальних переробок. Ми працюємо з різними стилями та вимогами клієнтів.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="mt-5 mb-4 text-dark">Наші принципи:</h3>
+            <ul class="list-unstyled">
+                <li class="mb-3"><i class="fas fa-check-circle me-3" style="color: #28a745;"></i>Професіоналізм і відповідальність на кожному етапі робіт</li>
+                <li class="mb-3"><i class="fas fa-check-circle me-3" style="color: #28a745;"></i>Індивідуальний підхід до кожного проекту</li>
+                <li class="mb-3"><i class="fas fa-check-circle me-3" style="color: #28a745;"></i>Застосування найкращих матеріалів і сучасних технологій</li>
+                <li class="mb-3"><i class="fas fa-check-circle me-3" style="color: #28a745;"></i>Точне дотримання термінів та бюджетів</li>
+                <li class="mb-3"><i class="fas fa-check-circle me-3" style="color: #28a745;"></i>Забезпечення високої якості за доступними цінами</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 🔹 Послуги -->
+    <section id="services" class="services py-5 bg-light">
+        <div class="container text-center">
+            <h2>Наші послуги</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/building.jpg" alt="Будівництво" class="img-fluid">
+                    <h3>Будівництво</h3>
+                    <p>Якісне будівництво з гарантією</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/repairing.jpg" alt="Ремонт" class="img-fluid">
+                    <h3>Ремонт</h3>
+                    <p>Професійний ремонт будь-якої складності</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/designing.jpg" alt="Проектування" class="img-fluid">
+                    <h3>Проектування</h3>
+                    <p>Індивідуальні проєкти будівель</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔹 Контакти -->
+    <section id="contact" class="contact py-5 bg-light">
+        <div class="container">
+            <h2 class="display-4 text-dark text-center mb-4">Зв'яжіться з нами</h2>
+            <p class="lead text-muted text-center mb-5">Якщо у вас є запитання або ви хочете обговорити проект, залиште свої контактні дані, і ми зв'яжемося з вами.</p>
+
+            <!-- Форма для повідомлення -->
+            <form id="contact-form">
+                <div class="form-group mb-3">
+                    <label for="name" class="form-label">Ваше ім'я</label>
+                    <input type="text" id="name" class="form-control" placeholder="Введіть ваше ім'я" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="email" class="form-label">Ваш email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Введіть ваш email" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="message" class="form-label">Ваше повідомлення</label>
+                    <textarea id="message" class="form-control" rows="4" placeholder="Напишіть ваше повідомлення" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Надіслати</button>
+            </form>
+
+            <!-- Контактні дані компанії -->
+            <div class="contact-info bg-white p-4 shadow-sm rounded mt-5">
+                <h4 class="text-dark mb-3">Наші контакти</h4>
+                <p class="text-muted mb-3"><strong>Адреса:</strong> м. Київ, вул. Хрещатик, 12</p>
+                <p class="text-muted mb-3"><strong>Телефон:</strong> <a href="tel:+380671234567" class="text-decoration-none text-dark">+38 (067) 123-45-67</a></p>
+                <p class="text-muted mb-3"><strong>Email:</strong> <a href="mailto:info@budivnyctvo.com" class="text-decoration-none text-dark">info@budivnyctvo.com</a></p>
+                <p class="text-muted mb-3"><strong>Години роботи:</strong> Пн-Пт: 9:00 - 18:00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔹 Футер -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Будівництво+. Усі права захищені.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
